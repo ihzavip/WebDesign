@@ -1,0 +1,50 @@
+/* logo */
+a#main-a {
+  color: white;
+  border: white;
+  border: solid;
+  background-origin: padding-box;
+  padding: 5px;
+  /* remove the bottom line */
+  text-decoration: none;
+  margin: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* listnya */
+.main-list {
+  opacity: 1;
+  font: normal 150px;
+  font-size: 150px;
+  line-height: 1em;
+  text-align: left;
+}
+
+/* nav link */
+a.a-nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+a.a-nav-link::after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px white;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+a.a-nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
+}
+
+body {
+  background-color: pink;
+}
+
+footer {
+  color: white;
+}
